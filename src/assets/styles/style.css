@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  line-height: calc(1em + 0.5rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.oneScreen {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.icon {
+  width: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+.iconvk {
+  transform: scale(1.25);
+  transform: translateY(4px);
+}
+
+.oneScreen__photo {
+  position: relative;
+  width: 40vw;
+  height: 50vh;
+  background: #000000 url("../img/avatar.jpg") no-repeat center / cover;
+  border-radius: 30px;
+  animation: animation-avtar 2s;
+}
+
+.oneScreen__about {
+  margin-left: 2rem;
+  max-width: 40vw;
+  position: relative;
+  left: -10vw;
+  z-index: 2;
+  background-color: white;
+  padding: 50px;
+  border-radius: 2rem;
+  box-shadow: -5px 5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes animation-avtar {
+  0% {
+    opacity: 0;
+    transform: translateY(-10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.oneScreen__about--icon {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.oneScreen__photo--text {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2rem;
+}
+
+.oneScreen__about--head {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: black;
+}
+
+.oneScreen__about--text {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: black;
+}
+
+.twoScreen {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1px;
+  margin-bottom: 10vh;
+}
+
+.thirdScreen {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  padding: 10vh 0;
+}
+
+.thirdScreen__info--title {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: white;
+}
+
+.thirdScreen__info--quote {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+}
+
+.thirdScreen__info--contact {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  margin-top: 10px;
+}
+
+.thirdScreen__info--adress {
+  margin-top: 10px;
+}
+
+.thirdScreen__info--phone {
+  margin-top: 10px;
+}
+
+.thirdScreen__info--link {
+  display: flex;
+  gap: 10px;
+}
+
+.twoScreen__head {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: black;
+  width: 80vw;
+}
+
+.thirdScreen__head {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: black;
+  width: 80vw;
+}
+
+.card__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.card__header--title {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  color: black;
+}
+
+.card__text {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: black;
+}
+
+.card__link {
+  display: flex;
+  gap: 10px;
+}
+
+.twoScreen__projects {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  row-gap: 50px;
+  margin-top: 24px;
+}
+
+.thirdScreen__info {
+  width: 40vw;
+}
+
+.thirdScree__img {
+  background: #000000 url(../img/cat.jpg) no-repeat center / cover;
+  width: 40vw;
+  height: 40vh;
+  border-radius: 30px;
+}
+
+/* Для широкого экрана  */
+@media (min-width: 2000px) {
+  .oneScreen__photo {
+    height: 65vh;
+  }
+  .twoScreen__projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1250px) {
+  .card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Для планшета */
+@media (min-width: 700px) and (max-width: 1024px) {
+  .twoScreen__projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .oneScreen {
+    display: inline; /* отключаем flex, чтобы float работал */
+    padding: 40px;
+    width: 100vw;
+  }
+
+  .oneScreen__photo {
+    float: left;
+    margin-left: 10rem;
+    height: 30vh;
+    margin: 4vh 5px 0 50px;
+  }
+  .oneScreen__about {
+    position: static;
+    max-width: 100%;
+    margin-left: 2rem;
+  }
+
+  .oneScreen__photo--text {
+    position: absolute;
+    right: -10px;
+  }
+}
+/* Телефон */
+@media (max-width: 700px) {
+  .oneScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .oneScreen__photo {
+    max-width: 95vw;
+    width: 95vw;
+    margin: 35px 2dev 2dev 0;
+  }
+
+  .oneScreen__about {
+    width: 95vw;
+    max-width: 95vw;
+    position: static;
+    margin: 2rem 0 0 0;
+  }
+
+  .twoScreen__projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .thirdScreen {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .thirdScreen__info {
+    width: 95vw;
+  }
+
+  .thirdScree__img {
+    margin-top: 5vh;
+    width: 95vw;
+  }
+}
