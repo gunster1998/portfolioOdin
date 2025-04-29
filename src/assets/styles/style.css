@@ -377,7 +377,7 @@ a {
   .oneScreen__photo {
     max-width: 95vw;
     width: 95vw;
-    margin: 35px 2rem 2rem 0;
+    margin: 35px 2rem 2rem 2rem;
   }
 
   .oneScreen__about {
