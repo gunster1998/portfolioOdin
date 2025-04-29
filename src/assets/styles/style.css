@@ -90,7 +90,6 @@ a {
 
 .oneScreen {
   display: flex;
-  width: 100vw;
   align-items: center;
   justify-content: center;
   margin-top: 5vh;
@@ -177,7 +176,6 @@ a {
 }
 
 .twoScreen {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,7 +184,6 @@ a {
 }
 
 .thirdScreen {
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,7 +346,6 @@ a {
   .oneScreen {
     display: inline; /* отключаем flex, чтобы float работал */
     padding: 40px;
-    width: 100vw;
   }
 
   .oneScreen__photo {
@@ -376,13 +372,12 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
   }
 
   .oneScreen__photo {
     max-width: 95vw;
     width: 95vw;
-    margin: 35px 2dev 2dev 0;
+    margin: 35px 2rem 2rem 0;
   }
 
   .oneScreen__about {
@@ -398,7 +393,6 @@ a {
 
   .thirdScreen {
     flex-direction: column;
-    width: 100vw;
   }
   .thirdScreen__info {
     width: 95vw;
